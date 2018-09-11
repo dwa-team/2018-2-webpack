@@ -1,0 +1,58 @@
+body {
+    background: black;
+}
+
+*{
+    font-family: 'HeroRegular';
+    color: white;
+}
+
+main.mainContainer {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
+
+.sectionBtns {
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.btnGeneral {
+    background: #5D12AA;
+    border: none;
+    border-radius: 3px;
+    padding: 12px;
+    display: inline-block;
+    color: white;
+    margin: 12px;
+    cursor: pointer;
+}
+
+.btnGeneral:hover {
+    background: #7623CC;
+}
+
+
+/* ----------------------------------*/
+/* Classes for setting up max-width */
+/* ----------------------------------*/
+.maxW1200 {
+    max-width: 1200px;
+}
+.maxW900 {
+    max-width: 900px;
+}
+.maxW600 {
+    max-width: 600px;
+}
+/* ----------------------------------*/
+
+.showAllBorders {
+    div {
+        border:1px solid white;
+    }
+}

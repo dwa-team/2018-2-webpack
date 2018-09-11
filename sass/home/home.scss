@@ -1,0 +1,71 @@
+@import "../mq.scss";
+
+.sectionTitle {
+    width: 100%;
+    background: black;
+    color: white;
+    padding: 15px 0px;
+    text-align: center;
+    margin: 25px auto;
+}
+
+.sectionHeader {
+    border-bottom: 1px solid #56acde;
+}
+
+.logoDWA {
+    @extend .sprite_1-dwa-logo;
+    margin: 50px auto 40px;
+    &:hover {
+        @extend .sprite_1-dwa-logo-over;
+        transform: scale(0.9);
+    }
+    @media only screen and (max-width: $xs) {
+        & { transform: scale(1.5); }
+    }
+}
+
+
+
+
+footer.sectionFooter {
+    background: #ffffff;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 20px 0px;
+    ul {
+        text-align: center;
+        padding: 0;
+        list-style: none;
+        li {
+            height: 50px;
+            width: 50px;
+            background: #b8b8b8;
+            display: inline-block;
+            margin: 8px 15px;
+            border-radius: 5px;
+            vertical-align: top;
+            cursor: pointer;
+            
+            &:hover {
+                background-color: #8E8E8E;
+            }
+
+            &:first-child {
+                background: transparent;
+                p {
+                    color: black;
+                }
+                @media only screen and (max-width: $xs) {
+                    & { 
+                        width: 100%; 
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
